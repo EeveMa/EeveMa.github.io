@@ -7,6 +7,32 @@
             background-color: #E5F9F5;
         }
 
+        .navbar{
+            background-color:white;
+            text-align: center;
+            padding: 15px 30px;
+            display: flex;
+        }
+
+        .navlinks{
+            list-style:none;
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .navbar a{
+            color:blue;
+            margin: 10px;
+            text-align: center;
+            display: flex;
+        }
+
+        .navbar a:hover{
+            background-color: rgb(220, 220, 220);
+        }
+
         H1{
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
@@ -25,6 +51,16 @@
   </HEAD>
 
   <BODY>
+
+    <nav class="navbar">
+        <ul class="navlinks">
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#projects">Projects</a></li>         
+        </ul>
+    </nav>
+
     <H1>Eeve Mason</H1> 
     
     <img src="me.jpg" alt="A photo of me, wearing a propeller hat and holding a large fake lollypop." 
@@ -36,7 +72,7 @@
         &nbsp Poet <BR>
     </H4>
 <BR>
-    <H2>About me:</H2>
+    <H2 id="aboutMe">About me:</H2>
 
     <P>
         I am a student at SMCM majoring in computer science and minoring 
@@ -45,13 +81,14 @@
         political and environmental crises.
     </P>
 
-    <Contact>
+    <H2 id="contact">Contacts:</H2>
+    <p>
         <A HREF="mailto:jedimindglitch@gmail.com">jedimindglitch@gmail.com</A><BR>
         <A HREF="https://github.com/EeveMa">EeveMa</A> on Github<BR>
         <A HREF="https://www.linkedin.com/in/eevem/">EeveM</A> on Linkedin<BR>
-    </Contact>
+    </p>
 
-    <H2>Interests</H2>
+    <H2 id="interests">Interests</H2>
 
     <P>
         - Creating and playing board and video games. <BR>
@@ -59,13 +96,15 @@
         - Climbing trees and hiking in the woods. <BR>
     </P>
 
-    <H2>Projects</H2>
+    <H2 id="projects">Projects</H2>
 
     <H3>Wall of Dead</H3>
     
     <P>
         Wall of Dead is a simple, top-down shoot 'em up game that I made with my 
-        classmates Theo P. and Thomas S. in the Pico-8 engine.
+        classmates Theo P. and Thomas S. in the Pico-8 engine. Thanks to Pico-8
+        magic, the entire game is encoded in the below image, ready to play in
+        the Pico-8 virtual machine.
     </P>
 
     <IMG src="wall of dead.p8.png" alt="Pico-8 cart for Wall of Dead">
@@ -81,7 +120,7 @@
 
     <p>
         I am a contributing writer for my college's newspaper, The Point News.
-        My pieces include current  events, game reviews, and puzzles.
+        My work for them includes current events, game reviews, and puzzles.
     </p>
 
   </BODY>
